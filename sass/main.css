@@ -224,30 +224,32 @@ body {
 }
 
 .loginBody {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10rem 0rem;
-}
-
-.containerLogin {
-  width: 45rem;
-}
-
-.loginBody {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  margin: 8rem auto;
+}
+
+.signUpBody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin: 1rem auto;
 }
 
 .containerLogin {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  width: 45rem;
+}
+
+@media (max-width: 575px) {
+  .containerLogin {
+    width: 30rem;
+  }
 }
 
 .login_form {

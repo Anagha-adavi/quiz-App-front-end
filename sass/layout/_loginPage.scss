@@ -1,23 +1,22 @@
-  .loginBody{
-    display:flex;
-    justify-content: center;
-    padding:10rem 0rem;
-    
-  }
-
-  .containerLogin{
-    width:45rem;
-  }
   
   .loginBody{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    
+   margin:8rem auto;
 
+  }
+  .signUpBody{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+   margin:1rem auto;
   }
   .containerLogin{
     grid-column:2/3;
-    
+    width:45rem;
+
+     @media (max-width:575px){
+       width:30rem;
+     }
   }
 
   .login_form{

@@ -1,0 +1,36 @@
+.container{
+  &__startTestBtn{
+    font-size:1.6rem;
+    border:none;
+    color:$color-grey-primary;
+    font-weight: 600;
+    padding:1rem 2rem;
+    border-radius:50px;
+    transition:all .3s;
+    outline:none;
+    &:hover,
+    &:active{
+      transform: scaleX(1.05);
+      
+    } 
+  }
+}
+
+.loginBtn{
+  border:none;
+  padding:1rem 2rem;
+  letter-spacing:2px;
+  font-size:1.6rem;
+  background-color: $color-grey-primary;
+  color:$color-white-primary;
+  border-radius:5px;
+  outline:none;
+  transition:all .3s;
+
+  &:active{
+    transform:translateY(-.3rem);
+  }
+
+}
+
+

@@ -1,0 +1,87 @@
+//header-section
+
+.header{
+  font-size:1.8rem;
+  color:$color-white-primary;
+
+  &_admin{
+    display:flex;
+    align-items:center;
+   
+  }
+ 
+  &_navigation{
+    width:20%;
+    padding:0 2rem;
+    display:flex;
+    justify-content: space-around;
+   
+   &__list{
+     list-style:none;
+     transition:all .4s;
+
+     &:hover{
+       transform:scale(1.1);
+     }
+   }
+
+   &__link{
+     text-decoration: none;
+     color:$color-white-primary;
+     transition:all .4s;
+     
+     &:hover{
+       color:$color-green-tertiary;
+     }
+     
+   }
+  }
+
+}
+
+.container{
+  color:$color-white-primary;
+  font-size:2.5rem; 
+  &__heading{
+    animation: forvisibility 1s ease-out .75s;
+    //  animation-fill-mode: backwards;
+  }
+}
+
+.login_heading{
+  text-align:center;
+  background-image: linear-gradient( to right,
+  rgba($color-green-tertiary, .85) ,
+  rgba($color-green-secondary, .85),
+  ) ;
+  color:$color-white-primary;
+  padding:2rem;
+  font-size:3rem;
+  letter-spacing: 2px;
+}
+
+.login_form{
+  &--label{
+    color:$color-grey-primary;
+    font-size:1.6rem;
+    font-weight:500;
+  }
+ &--input{
+   padding:1rem;
+   border:none;
+   box-shadow:$box-shadow;
+   transition :all .5s;
+   border-bottom: 3px solid transparent;
+  &:focus{
+    outline: none;
+    border-bottom: 3px solid $color-green-secondary;
+  }
+  &::-webkit-input-placeholder {
+           color:$color-grey-secondary;
+           
+       }
+   
+ }
+}
+
+

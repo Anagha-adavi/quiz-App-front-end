@@ -1,0 +1,28 @@
+//Header section
+.header{
+    background-color:$color-grey-primary;
+}
+
+//container section for home page
+.container{
+    height:90vh;
+    background-image: linear-gradient( to right,
+                                     rgba($color-green-secondary, .85) ,
+                                     rgba($color-green-tertiary, .85),
+                                     ) ,
+                                     url(../../images/homePageImage.jpg);
+    background-size: 100%;
+}
+
+//container for login page
+.containerLogin{
+  
+  box-shadow: $box-shadow;
+  border:0px;
+  border-radius:15px;
+  overflow:hidden;
+  
+}
+
+
+  

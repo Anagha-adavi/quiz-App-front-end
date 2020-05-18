@@ -25,5 +25,12 @@
   
 }
 
-
+.profile{
+    &_container{
+      box-shadow: $box-shadow;
+      border:0px;
+      border-radius:15px;
+      overflow:hidden;
+    }
   
+}

@@ -118,6 +118,50 @@ body {
   color: rgba(58, 78, 85, 0.8);
 }
 
+.profile_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/span 3;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(87, 186, 152, 0.85)), to(rgba(101, 204, 187, 0.85)));
+  background-image: linear-gradient(to right, rgba(87, 186, 152, 0.85), rgba(101, 204, 187, 0.85));
+  color: #F2F2F2;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.profile_details {
+  font-size: 2rem;
+  padding: 0rem 2rem 2rem 13rem;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+.profile_image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.question {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #18262B;
+}
+
 @-webkit-keyframes forvisibility {
   0% {
     opacity: 0;
@@ -144,11 +188,9 @@ body {
 
 .gotohomePageLink {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #57BA98;
-  border-bottom: 1px solid rgba(101, 204, 187, 0.5);
-  width: 40%;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -283,6 +325,40 @@ body {
   font-weight: 500;
 }
 
+.profile_body {
+  margin: 10rem auto;
+}
+
+.profile_container {
+  margin: 10rem auto;
+  display: -ms-grid;
+  display: grid;
+  width: 50rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1rem 1fr 1fr 1rem 1fr 4rem;
+      grid-template-rows: 1fr 1fr 1rem 1fr 1fr 1rem 1fr 4rem;
+}
+
+.profile_details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 1.5rem;
+}
+
+.profile_gotohome {
+  padding: 0 3rem;
+}
+
 .header {
   background-color: #18262B;
 }
@@ -296,6 +372,14 @@ body {
 }
 
 .containerLogin {
+  -webkit-box-shadow: 1px 2px 5px rgba(24, 38, 43, 0.3);
+          box-shadow: 1px 2px 5px rgba(24, 38, 43, 0.3);
+  border: 0px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.profile_container {
   -webkit-box-shadow: 1px 2px 5px rgba(24, 38, 43, 0.3);
           box-shadow: 1px 2px 5px rgba(24, 38, 43, 0.3);
   border: 0px;

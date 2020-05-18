@@ -13,9 +13,7 @@
 
     &:hover{
       color:$color-green-tertiary;
-      
-        transform:scale(1.1);
-      
+      transform:scale(1.1); 
     }
   }
  
@@ -92,5 +90,41 @@
    
  }
 }
+.profile{
+    &_heading{
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      grid-row:1/span 3;
+      
+      background-image: linear-gradient( to right,
+      rgba($color-green-secondary, .85) ,
+      rgba($color-green-tertiary, .85),
+      ) ;
+     
+          color:$color-white-primary;
+          text-align:center;
+          font-size:4rem;
+  }
+  &_details{
+    font-size:2rem;
+    padding:0rem 2rem 2rem 13rem;
+    grid-row:5/6;
+  }
+  &_image{
+    width:15rem;
+    height:15rem;
+    border-radius:100px;
+    position:absolute;
+    top:30%;
+    left:35%;
 
+  }
+}
+.question{
+  text-align:center;
+  font-size:1.8rem;
+  color:$color-grey-primary;
+
+}
 

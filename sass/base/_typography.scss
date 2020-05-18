@@ -7,7 +7,16 @@
   &_admin{
     display:flex;
     align-items:center;
-   
+    text-decoration:none;
+    color:$color-white-primary;
+    transition:all .4s;
+
+    &:hover{
+      color:$color-green-tertiary;
+      
+        transform:scale(1.1);
+      
+    }
   }
  
   &_navigation{

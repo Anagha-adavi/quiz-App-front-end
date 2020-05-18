@@ -5,13 +5,14 @@
 
 //container section for home page
 .container{
-    height:90vh;
+    height:100%;
     background-image: linear-gradient( to right,
                                      rgba($color-green-secondary, .85) ,
                                      rgba($color-green-tertiary, .85),
                                      ) ,
                                      url(../../images/homePageImage.jpg);
-    background-size: 100%;
+    background-size:100%;
+    background-repeat:no-repeat ;
 }
 
 //container for login page

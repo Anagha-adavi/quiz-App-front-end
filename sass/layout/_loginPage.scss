@@ -1,22 +1,16 @@
   
-  .loginBody{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-   margin:8rem auto;
-
-  }
-  .signUpBody{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-   margin:1rem auto;
-  }
+  
+    .container_SignUp{
+     margin:5rem 0 10rem 0;
+   }
+  
+ 
   .containerLogin{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    grid-column:2/3;
-    width:45rem;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     width:45rem;
 
      @media (max-width:575px){
        width:30rem;

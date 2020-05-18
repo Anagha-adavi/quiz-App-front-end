@@ -29,6 +29,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+  color: #F2F2F2;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.header_admin:hover {
+  color: #65CCBB;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header_navigation {
@@ -183,6 +193,10 @@ body {
           transform: translateY(-0.3rem);
 }
 
+.body {
+  height: 100vh;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,20 +237,8 @@ body {
       align-self: start;
 }
 
-.loginBody {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  margin: 8rem auto;
-}
-
-.signUpBody {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  margin: 1rem auto;
+.container_SignUp {
+  margin: 5rem 0 10rem 0;
 }
 
 .containerLogin {
@@ -245,9 +247,6 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
   width: 45rem;
 }
 
@@ -289,10 +288,11 @@ body {
 }
 
 .container {
-  height: 90vh;
+  height: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(87, 186, 152, 0.85)), to(rgba(101, 204, 187, 0.85))), url(../../images/homePageImage.jpg);
   background-image: linear-gradient(to right, rgba(87, 186, 152, 0.85), rgba(101, 204, 187, 0.85)), url(../../images/homePageImage.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .containerLogin {

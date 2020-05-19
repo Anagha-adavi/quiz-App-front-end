@@ -1,0 +1,16 @@
+{
+  "name": "quiz-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:js":"parcel watch ./js/index.js --out-dir ./js --out-file bundle.js",
+    "build:js":"parcel build ./js/index.js --out-dir ./js --out-file bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

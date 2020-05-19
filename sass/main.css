@@ -410,7 +410,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50vw;
+  width: 70vw;
   margin: 5rem auto;
 }
 
@@ -433,8 +433,12 @@ body {
   height: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(87, 186, 152, 0.85)), to(rgba(101, 204, 187, 0.85))), url(../../images/homePageImage.jpg);
   background-image: linear-gradient(to right, rgba(87, 186, 152, 0.85), rgba(101, 204, 187, 0.85)), url(../../images/homePageImage.jpg);
-  background-size: 100%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .containerLogin {

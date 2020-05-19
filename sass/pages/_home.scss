@@ -1,4 +1,5 @@
 //Header section
+
 .header{
     background-color:$color-grey-primary;
 }
@@ -16,6 +17,7 @@
 }
 
 //container for login page
+
 .containerLogin{
   
   box-shadow: $box-shadow;
@@ -33,4 +35,10 @@
       overflow:hidden;
     }
   
+}
+
+.qa_container{
+  box-shadow:$box-shadow;
+  border-radius:15px;
+      overflow:hidden;
 }

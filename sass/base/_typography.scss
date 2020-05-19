@@ -92,11 +92,6 @@
 }
 .profile{
     &_heading{
-      display:flex;
-      flex-direction:column;
-      justify-content: center;
-      grid-row:1/span 3;
-      
       background-image: linear-gradient( to right,
       rgba($color-green-secondary, .85) ,
       rgba($color-green-tertiary, .85),
@@ -128,3 +123,8 @@
 
 }
 
+.qa{
+  &_box{
+    font-size:1.8rem;
+  }
+}
